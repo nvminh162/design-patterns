@@ -81,9 +81,11 @@ class Socket {
 public class Main {
     public static void main(String[] args) {
         Socket socket = new Socket();
+
         socket.addDevice(new Tivi()); 
         socket.addDevice(new Fridge()); 
         socket.addDevice(new Fan()); 
+
         socket.activate();
     }
 }
