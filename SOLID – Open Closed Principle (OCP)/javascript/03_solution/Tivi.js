@@ -1,5 +1,5 @@
 class Tivi {
-  connectTivi() {
+  connect() {
     console.log("Tivi connected");
   }
 }

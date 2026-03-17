@@ -1,5 +1,5 @@
 class Fridge {
-  connectFridge() {
+  connect() {
     console.log("Fridge connected");
   }
 }
