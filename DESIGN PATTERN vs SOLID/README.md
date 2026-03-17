@@ -1,23 +1,57 @@
-Optimizing tool selection...Sự khác nhau ngắn gọn:
+# Design Pattern vs SOLID (de hieu, de ap dung)
 
-1. SOLID là bộ nguyên tắc thiết kế lớp và module  
-- Mục tiêu: viết code dễ bảo trì, dễ mở rộng, ít phụ thuộc chặt.  
-- Trả lời câu hỏi: “Nên tổ chức code như thế nào cho đúng hướng?”  
-- Gồm 5 nguyên tắc: SRP, OCP, LSP, ISP, DIP.
+Tai lieu nay giup ban phan biet:
 
-2. Design Patterns là các mẫu giải pháp đã được kiểm chứng  
-- Mục tiêu: giải quyết các bài toán thiết kế lặp đi lặp lại (tạo object, tổ chức quan hệ, hành vi).  
-- Trả lời câu hỏi: “Với vấn đề này thì dùng mẫu nào?”  
-- Ví dụ: Strategy, Factory, Observer, Decorator, Adapter, Singleton.
+- SOLID la nguyen tac thiet ke
+- Design Pattern la mau giai phap
 
-Cách hiểu dễ nhớ:
-- SOLID giống “luật viết tốt”.
-- Design Pattern giống “công thức áp dụng cho tình huống cụ thể”.
+## 1) SOLID va Design Pattern khac nhau o dau?
 
-Mối quan hệ giữa chúng:
-- Không đối lập, mà bổ trợ nhau.
-- Dùng SOLID để định hướng kiến trúc.
-- Dùng Pattern để hiện thực cụ thể theo hướng đó.
-- Ví dụ: muốn tuân OCP thì thường dùng Strategy hoặc Decorator để mở rộng hành vi mà không sửa code cũ.
+### SOLID la gi?
 
-Nếu bạn muốn, mình có thể lấy ngay ví dụ trong project của bạn (OCP phần problem/bad/solution) để chỉ ra chỗ nào đang theo SOLID và chỗ nào đang dùng pattern.
+SOLID la 5 nguyen tac de to chuc code de:
+
+- de doc
+- de mo rong
+- de bao tri
+- giam sua code cu moi khi co yeu cau moi
+
+5 nguyen tac gom: SRP, OCP, LSP, ISP, DIP.
+
+### Design Pattern la gi?
+
+Design Pattern la cac "cong thuc" giai quyet bai toan thiet ke lap di lap lai.
+
+Vi du: Strategy, Factory, Observer, Decorator...
+
+### Nho nhanh
+
+- SOLID = luat thiet ke (nguyen tac)
+- Pattern = cach trien khai (mau giai phap)
+
+Hai thu nay bo tro nhau, khong doi lap nhau.
+
+## 2) Vi du trong project nay (OCP)
+
+Trong thu muc JavaScript co 3 buoc:
+
+- `01_problem`: Ban dau chi co mua bang vang.
+- `02_bad`: Co them yeu cau moi (mua bang tien), ta sua truc tiep class cu -> class phinh to, if/else nhieu, moi lan mo rong lai sua code cu.
+- `03_solusion`: Tach logic theo cach thanh toan (vang, tien...) -> them kieu moi ma khong can sua logic cu qua nhieu.
+
+Day chinh la tinh than cua OCP:
+
+- Open for extension: Co the mo rong them tinh nang.
+- Closed for modification: Han che sua code dang on dinh.
+
+## 3) Cach hoc nhanh voi repo nay
+
+1. Chay `01_problem/s.js` de hieu bai toan ban dau.
+2. Chay `02_bad/s1.js` va `02_bad/s2.js` de thay van de khi mo rong.
+3. Chay `03_solusion/s.js` de thay cach lam tot hon theo huong OCP.
+
+## 4) Ket luan
+
+- Dung SOLID de dinh huong cach viet code.
+- Dung Design Pattern de giai quyet bai toan cu the.
+- Khi code can mo rong lien tuc, uu tien cach thiet ke theo OCP som de tranh "dap di xay lai".
