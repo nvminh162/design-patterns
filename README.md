@@ -1,2 +1,2 @@
-# design-patterns
-Learning: Learn design patterns for developer
+# Learning: Learn design patterns for developer
+
