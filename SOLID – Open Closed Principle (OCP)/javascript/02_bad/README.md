@@ -1,3 +1,14 @@
-Mặc dù work đúng nhưng vi phạm quy tắc Đóng Mở (OCP)
+# 02 - Bad (Vi phạm OCP)
 
-Một số lượng thiết bị nhất định được thêm vào Socket (hàm khởi tạo), cần sửa đổi mã nguồn của lớp Socket khi cần thêm hoặc sửa thiết bị => Làm code khó bảo trì => Làm phức tạp mở rộng tương lai
+Phiên bản này vẫn chạy đúng, nhưng vi phạm nguyên tắc OCP.
+
+Lý do vi phạm:
+- Lớp Socket phụ thuộc trực tiếp vào từng loại thiết bị cụ thể (Tivi, Fridge, Fan).
+- Mỗi lần thêm thiết bị mới, phải sửa constructor và hàm activate trong Socket.
+
+Hệ quả:
+- Lớp trung tâm bị sửa liên tục.
+- Code khó bảo trì, khó test, khó mở rộng.
+
+Tóm lại:
+- Chạy được không có nghĩa là thiết kế tốt.
