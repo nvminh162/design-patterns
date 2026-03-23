@@ -4,23 +4,23 @@ class Discount {
   }
 }
 
-class Shipping {
-  calc() {
-    return 5;
-  }
-}
-
 class Fees {
   calc(value) {
     return value * 1.05;
   }
 }
 
-class ShopeeFacadePattern {
+class Shipping {
+  calc() {
+    return 5;
+  }
+}
+
+class Facache {
   constructor() {
     this.discount = new Discount();
-    this.shipping = new Shipping();
     this.fees = new Fees();
+    this.shipping = new Shipping();
   }
 
   calc(price) {
@@ -36,7 +36,7 @@ class ShopeeFacadePattern {
 }
 
 const buy = (price) => {
-  const shopee = new ShopeeFacadePattern();
+  const shopee = new Facache();
   console.log(`Price final: ${shopee.calc(price)}đ`);
 };
 
