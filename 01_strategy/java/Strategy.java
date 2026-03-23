@@ -39,14 +39,14 @@ public class Strategy {
     private final Map<String, PriceCalculator> getPriceStrategies = new HashMap<>();
 
     public Strategy() {
-        getPriceStrategies.put("preOrder", this::preOrderPrice);
-        getPriceStrategies.put("promotion", this::promotionPrice);
-        getPriceStrategies.put("blackFriday", this::blackFridayPrice);
-        getPriceStrategies.put("default", this::defaultPrice);
+        getPriceStrategies.put("preOrder", price -> preOrderPrice(price));
+        getPriceStrategies.put("promotion",  price -> promotionPrice(price));
+        getPriceStrategies.put("blackFriday",  price -> blackFridayPrice(price));
+        getPriceStrategies.put("default",  price -> defaultPrice(price));
     }
 
     public double getPrice(double originPrice, String typePromotion) {
-        PriceCalculator calculator = getPriceStrategies.getOrDefault(typePromotion, this::defaultPrice);
+        PriceCalculator calculator = getPriceStrategies.getOrDefault(typePromotion,  price -> defaultPrice(price));
         return calculator.apply(originPrice);
     }
 
