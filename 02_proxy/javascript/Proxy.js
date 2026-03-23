@@ -1,10 +1,10 @@
 // SẾP: người quyết định mọi việc nhận request cuối
 class Leader {
-  receiveRequest(offer) {
+  approveOffer(offer) {
     if (offer > 10000) {
-        console.log(`Reject: ${offer}`);
+        console.log(`Reject: $${offer}`);
     } else {
-        console.log(`Accept:  ${offer}`);
+        console.log(`Accept: $${offer}`);
     }
   }
 }
@@ -15,9 +15,9 @@ class Secretary {
     this.leader = new Leader();
   }
 
-  receiveRequest(offer) {
+  forwardRequest(offer) {
     // Khi THƯ KÝ nhận mọi request thì SẾP là người nhận được câu hỏi và giải quyết
-    this.leader.receiveRequest(offer);
+    this.leader.approveOffer(offer);
   }
 }
 
@@ -28,12 +28,12 @@ class Developer {
   }
 
   // DEVELOPER: gửi đến THƯ KÝ
-  applyFor(target) {
-    target.receiveRequest(this.offer);
+  submitOffer(offer) {
+    offer.forwardRequest(this.offer);
   }
 }
 
 const dev01 = new Developer(10001);
-dev01.applyFor(new Secretary());
 const dev02 = new Developer(5000);
-dev02.applyFor(new Secretary());
+dev01.submitOffer(new Secretary());
+dev02.submitOffer(new Secretary());
