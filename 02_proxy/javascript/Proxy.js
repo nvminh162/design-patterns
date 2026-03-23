@@ -33,5 +33,7 @@ class Developer {
   }
 }
 
-const dev01 = new Developer(10000);
+const dev01 = new Developer(10001);
 dev01.applyFor(new Secretary());
+const dev02 = new Developer(5000);
+dev02.applyFor(new Secretary());
