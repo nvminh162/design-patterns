@@ -7,6 +7,7 @@ public class SimpleFactory {
 }
 
 class ServiceLogistics {
+
     private String name;
     private int doors;
     private String price;
