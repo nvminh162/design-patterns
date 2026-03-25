@@ -1,5 +1,9 @@
 'use-strict';
 
+/* 
+Lấy phần dư
+Và dùng phần dư đó làm index server
+*/
 console.log(`----------------------------------------`);
 console.log(`Thuật toán modulus`);
 const numServer = 3;
