@@ -45,4 +45,4 @@ m10.score();
 console.log(m10);
 console.log(`${m10.name} has record ${m10.goals} this session ${JSON.stringify(m10.stats)}`);
 
-// nhược điểm fix => Shadow Copy (deep copy) để fix nhược điểm => tạo tham chiếu mới cho thuộc tính khi tạo ra
+// nhược điểm fix => Shallow Copy (deep copy) để fix nhược điểm => tạo tham chiếu mới cho thuộc tính khi tạo ra
