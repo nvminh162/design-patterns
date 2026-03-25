@@ -7,3 +7,5 @@
 # ==================
 ## + Window có task manager (chỉ mở dc 1tab duy nhất)
 ## + Kết nối CSDL
+
+![](./1.png)
