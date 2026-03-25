@@ -50,8 +50,12 @@ class RoundRobin {
     }
 }
 
-const loadBalancer = new RoundRobin();
-const loadBalancer1 = new RoundRobin();
+/* 
+Lần 1: tạo object
+Lần 2: không dùng object mới, mà trả về object cũ
+*/
+const loadBalancer = new RoundRobin(); 
+const loadBalancer1 = new RoundRobin(); 
 console.log(`----------------------------------------`);
 console.log(`compare:: ${loadBalancer === loadBalancer1}`);
 loadBalancer.addServer(`Server 01`)
