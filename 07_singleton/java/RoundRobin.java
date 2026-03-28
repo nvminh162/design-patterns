@@ -31,7 +31,6 @@ public class RoundRobin {
         /*
         ==================== ROUND ROBIN + SINGLETON ====================
         */
-
         RoundRobinSingleton loadBalancer = RoundRobinSingleton.getInstance();
         RoundRobinSingleton loadBalancer1 = RoundRobinSingleton.getInstance();
 
