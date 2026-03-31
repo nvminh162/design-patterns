@@ -1,0 +1,1 @@
+https://fanatical-rabbit-bfc.notion.site/Design-pattern-Factory-Method-l-g-Share-link-1314a1eddcdb80cbb4c2fec9e3d6aade
