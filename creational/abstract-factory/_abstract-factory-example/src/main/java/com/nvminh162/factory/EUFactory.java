@@ -5,6 +5,7 @@ import com.nvminh162.product.light.EULight;
 import com.nvminh162.product.fan.Fan;
 import com.nvminh162.product.fan.EUFan;
 
+// Factory cho thị trường châu âu
 public class EUFactory implements AbstractFactory {
 
     @Override

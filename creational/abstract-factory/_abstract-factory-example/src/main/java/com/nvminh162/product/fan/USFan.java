@@ -1,5 +1,6 @@
 package com.nvminh162.product.fan;
 
+// sản phẩm thị trường mỹ
 public class USFan implements Fan {
 
     @Override
