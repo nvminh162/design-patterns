@@ -1,0 +1,1 @@
+https://fanatical-rabbit-bfc.notion.site/Observer-Pattern-l-g-14c4a1eddcdb8011a016f6a04e9112f3
