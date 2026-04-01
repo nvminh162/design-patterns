@@ -1,0 +1,1 @@
+https://fanatical-rabbit-bfc.notion.site/1-State-Pattern-l-g-1514a1eddcdb80c5b62fe82cff213f19
