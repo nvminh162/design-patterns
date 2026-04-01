@@ -1,0 +1,1 @@
+https://fanatical-rabbit-bfc.notion.site/Share-Decorator-Pattern-l-g-13d4a1eddcdb800198a8f7d2271f8c2c

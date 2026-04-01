@@ -1,0 +1,1 @@
+https://fanatical-rabbit-bfc.notion.site/1-Strategy-Pattern-l-g-1514a1eddcdb80888844d96a7ee2d292
