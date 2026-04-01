@@ -9,5 +9,10 @@ public class Main {
 
         Vehicle myBike = factory.createVehicle("bike");
         myBike.drive();
+
+        Vehicle myBus = factory.createVehicle("bus");
+        myBus.drive();
+        Bus bus = (Bus) factory.createVehicle("bus");
+        bus.otherMethod();
     }
 }

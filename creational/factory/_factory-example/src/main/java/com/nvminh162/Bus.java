@@ -8,4 +8,8 @@ public class Bus implements Vehicle {
     public void drive() {
         System.out.println("Driving a bus...");
     }
+
+    public void otherMethod() {
+        System.out.println("Bus other method");
+    }
 }
