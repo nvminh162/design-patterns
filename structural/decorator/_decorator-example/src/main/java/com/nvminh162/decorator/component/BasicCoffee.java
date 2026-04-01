@@ -1,4 +1,6 @@
-package com.nvminh162;
+package com.nvminh162.decorator.component;
+
+import com.nvminh162.decorator.core.Coffee;
 
 // Concrete Component - Cà phê cơ bản
 public class BasicCoffee implements Coffee {

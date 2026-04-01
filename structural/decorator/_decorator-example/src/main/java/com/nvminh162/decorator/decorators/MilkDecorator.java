@@ -1,4 +1,7 @@
-package com.nvminh162;
+package com.nvminh162.decorator.decorators;
+
+import com.nvminh162.decorator.core.Coffee;
+import com.nvminh162.decorator.core.CoffeeDecorator;
 
 // Concrete Decorator - Thêm sữa
 public class MilkDecorator extends CoffeeDecorator {

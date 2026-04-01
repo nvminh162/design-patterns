@@ -1,4 +1,4 @@
-package com.nvminh162;
+package com.nvminh162.decorator.core;
 
 // Decorator cơ bản
 public class CoffeeDecorator implements Coffee {

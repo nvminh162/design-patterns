@@ -1,4 +1,9 @@
-package com.nvminh162;
+package com.nvminh162.decorator.app;
+
+import com.nvminh162.decorator.component.BasicCoffee;
+import com.nvminh162.decorator.core.Coffee;
+import com.nvminh162.decorator.decorators.MilkDecorator;
+import com.nvminh162.decorator.decorators.SugarDecorator;
 
 // Main class
 public class Main {

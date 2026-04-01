@@ -1,7 +1,7 @@
-package com.nvminh162;
+package com.nvminh162.decorator.core;
 
 // Component interface
-interface Coffee {
+public interface Coffee {
     int getCost();
     String getDescription();
 }
