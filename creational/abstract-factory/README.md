@@ -1,0 +1,1 @@
+https://fanatical-rabbit-bfc.notion.site/Design-pattern-Abstract-Factory-l-g-Share-1314a1eddcdb803d89bfd24af010951c
