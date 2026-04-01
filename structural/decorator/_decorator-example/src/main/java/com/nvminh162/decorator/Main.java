@@ -1,4 +1,4 @@
-package com.nvminh162.decorator.app;
+package com.nvminh162.decorator;
 
 import com.nvminh162.decorator.component.BasicCoffee;
 import com.nvminh162.decorator.core.Coffee;
