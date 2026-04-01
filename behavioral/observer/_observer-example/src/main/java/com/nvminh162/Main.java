@@ -15,6 +15,8 @@ public class Main {
         // Alice nhận được...
         // Bob nhận được...
 
+        System.out.println("+++++++++++++++++++++++++++++++++++++");
+
         newsPublisher.unsubscribe(subscriber2);
 
         newsPublisher.publish("Breaking News: Observer Pattern đã được cập nhật!");
