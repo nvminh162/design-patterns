@@ -5,8 +5,6 @@ public class Main {
         VendingMachine machine = new VendingMachine();
 
         System.out.println("============");
-        machine.selectProduct();
-        System.out.println("============");
         machine.insertCoin();
         System.out.println("============");
         machine.selectProduct();

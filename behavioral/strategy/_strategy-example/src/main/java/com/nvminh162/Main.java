@@ -1,5 +1,11 @@
 package com.nvminh162;
 
+import com.nvminh162.context.ShoppingCart;
+import com.nvminh162.model.Item;
+import com.nvminh162.strategy.BitcoinPayment;
+import com.nvminh162.strategy.CreditCardPayment;
+import com.nvminh162.strategy.PayPalPayment;
+
 public class Main {
     public static void main(String[] args) {
         ShoppingCart cart = new ShoppingCart();

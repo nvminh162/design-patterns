@@ -1,4 +1,4 @@
-package com.nvminh162;
+package com.nvminh162.model;
 
 public class Item {
     public String name;
@@ -9,3 +9,4 @@ public class Item {
         this.price = price;
     }
 }
+
