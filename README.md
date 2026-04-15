@@ -40,3 +40,4 @@
 | Strategy Pattern                | ★☆☆☆☆ | ★★★★☆ |
 | Template Method Pattern         | ★★☆☆☆ | ★★★☆☆ |
 | Visitor Pattern                 | ★★★★☆ | ★☆☆☆☆ |
+
